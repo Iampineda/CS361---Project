@@ -23,13 +23,12 @@
 <body>
 
     <main class="content">
-
         <div class="box1">
             <div class="main-container">
                 <aside class="chart">
                     <div class="chart-container">
                         <h3> Common Conversion Charts</h3>
-                        <div class="box2"> <span class="box2-text"> Decimal -> Hex</span> </div>
+                        <div id="Chart1" class="box2"> <span class="box2-text"> Decimal -> Hex</span> </div>
                         <div class="box2"> <span class="box2-text"> Decimal -> Binary</span> </div>
                         <div class="box2"> <span class="box2-text"> Binary -> Hex</span> </div>
                 </aside>
@@ -41,7 +40,7 @@
                             <input type="text" name="input" class="I-style">
                         </div>
 
-                        <div class="select-container"> 
+                        <div class="select-container">
                             <label for="base_n" class="filter-input-label">Choose Base:</label>
                             <select name="base_n" id="from_base_n" class="dropdown-menu">
                                 <option value="Select">-Select-</option>
@@ -50,7 +49,7 @@
                                 <option value="Binary">Binary</option>
                             </select>
 
-                            <div class="select-container"> 
+                            <div class="select-container">
                                 <select name="base_n" id="to_base_n" class="dropdown-menu">
                                     <option value="Select">-Select-</option>
                                     <option value="Decmial"> Decimal</option>
@@ -58,15 +57,15 @@
                                     <option value="Binary">Binary</option>
                                 </select>
 
-                        </div>
+                            </div>
 
-                        <div class="IO-box">
-                            <label for="output" class="filter-input-label">Output: </label>
-                            <output type="text" name="output" class="O-style"> </output>
+                            <div class="IO-box">
+                                <label for="output" class="filter-input-label">Output: </label>
+                                <output type="text" name="output" class="O-style"> </output>
+                            </div>
                         </div>
-                    </div>
                 </section>
-          </div>
+            </div>
         </div>
 
 
@@ -80,6 +79,66 @@
     </main>
 
     <button type="button" id="information"> i</button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    
+    <div id="about-page" class="hidden">
+
+        <div class="modal-dialog">
+
+            <div class="about-header">
+                <p> About Page <p>
+                <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+            </div>
+
+            <div class="about-body">
+                <div class="para-containers"> 
+                    <h2> How To Use</h2>
+                    <p> 
+                     This Converter is easy to use and requires ___ number of steps 
+                    </p>      
+                </div>
+
+                <div class="para-containers"> 
+                    <h2> Step #1</h2>
+                    <p> 
+                     ----
+                    </p>      
+                </div>
+
+                <div class="para-containers"> 
+                    <h2> Step #2</h2>
+                    <p> 
+                     ----
+                    </p>      
+                </div>
+
+            </div>
+        
+        </div>
+
+        
+    </div>
+
+    <div id="chart-page" class="hidden">
+
+        <div class="modal-dialog">
+
+            <div class="about-header">
+                <h3> About Page </h3>
+                <button type="button" id="modal-close-2" class="modal-hide-button">&times;</button>
+            </div>
+
+            <div class="chart-body">
+                <img src="Tables/dectobin.jpg" alt="chart-tables">
+            </div> 
+
+
+        </div>
+
+        
+    </div>
 </body>
 
 </html>
+

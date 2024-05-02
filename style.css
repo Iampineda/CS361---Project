@@ -253,3 +253,121 @@ h3 {
 span.box2-text {
     margin: auto;
 }
+
+
+
+/*
+ * Modal Templates 
+ */
+
+ #modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.modal-dialog {
+  width: auto;
+  max-width: 600px;
+  min-width: 350px;
+  min-height: 450px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#modal-close-2,
+#modal-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 20px 10px;
+}
+
+#modal-cancel,
+#modal-accept {
+  margin-right: 20px;
+}
+
+#modal-cancel {
+  color: #333;
+  background-color: #fff;
+}
+
+#modal-cancel:hover {
+  background-color: #eee;
+}
+
+/*
+* About page
+*/
+
+#chart-page, 
+#about-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+.about-header {
+  padding-top: 5px;
+  padding-left: 5px;
+  position: relative;
+
+}
+
+.about-header h3 {
+  margin: 5px;
+  font-size: 28px;
+  background-color: lightgrey;
+}
+
+.chart-body {
+  margin: 5px;
+  width: 500px;
+  min-height: 400px;
+
+}
+
+.about-body {
+  margin: 5px;
+  width: 575px;
+  min-height: 700px;
+
+}
+
+.para-containers {
+  word-wrap: break-word;
+}
+
+h2 {
+  text-decoration: underline;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: black solid 1px;
+  text-align: center;
+}
