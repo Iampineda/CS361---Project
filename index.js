@@ -41,3 +41,28 @@ XButton2.addEventListener("click", function () {
     modalCloser()
 
 })
+
+/* Section 2: Input to Output
+*/
+
+var convert = document.getElementById("convert")
+convert.addEventListener("click", function () {
+
+    var Input = document.getElementById("iii")
+    console.log("ANS:", Input.value)
+
+    var Output = document.getElementById("ooo")
+    Output.value = Input.value
+    
+
+})
+
+var reset = document.getElementById("reset")
+reset.addEventListener("click", function () {
+
+    var Input = document.getElementById("iii")
+    Input.value = ""
+
+    var Output = document.getElementById("ooo")
+    Output.value = ""   
+})

@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto Slab", serif;
-    background-color: white;
+    background-color: beige;
   }
 
 /* 
@@ -65,7 +65,7 @@ a {
 */
 
 .content {
-    background-color: BLUE;
+  
 }
 
 
@@ -132,7 +132,6 @@ a {
 .button-container {
     display: inline-flex;
     position: relative;
-    background-color: BLUE;
     
 }
 
@@ -207,11 +206,13 @@ a {
 
 .O-style {
     width: 355px;
-    height: 35px;
+    height: auto;
     background-color: white;
     border-radius: 3px;
     border: black solid 1px;
     margin-left: 10px;
+
+    padding: 10px;
 }
 
 
