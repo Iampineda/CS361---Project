@@ -48,11 +48,12 @@ XButton2.addEventListener("click", function () {
 var convert = document.getElementById("convert")
 convert.addEventListener("click", function () {
 
+    
     var Input = document.getElementById("iii")
     console.log("ANS:", Input.value)
 
     var Output = document.getElementById("ooo")
-    Output.value = Input.value
+    Output.value = (Input.value)  
     
 
 })
@@ -65,4 +66,11 @@ reset.addEventListener("click", function () {
 
     var Output = document.getElementById("ooo")
     Output.value = ""   
+
+    
+    document.getElementById("from_base_n").selectedIndex = 0
+    document.getElementById("to_base_n").selectedIndex = 0
+
+
+    
 })
