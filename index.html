@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> INDEX</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" charset="utf-8" defer></script>
+
+    <title> Base Converter </title>
+
 </head>
+
+<header>
+
+    <h1 class="site-title"> Base Converter</h1>
+
+</header>
+
+
 <body>
-    
+
+    <main class="content">
+
+        <div class="box1">
+            <div class="main-container">
+                <aside class="chart">
+                    <div class="chart-container">
+                        <h3> Common Conversion Charts</h3>
+                        <div class="box2"> <span class="box2-text"> Decimal -> Hex</span> </div>
+                        <div class="box2"> <span class="box2-text"> Decimal -> Binary</span> </div>
+                        <div class="box2"> <span class="box2-text"> Binary -> Hex</span> </div>
+                </aside>
+
+                <section id="IO">
+                    <div class="IO-container">
+                        <div class="IO-box">
+                            <label for="input" class="filter-input-label">Input: </label>
+                            <input type="text" name="input" class="I-style">
+                        </div>
+
+                        <div class="select-container"> 
+                            <label for="base_n" class="filter-input-label">Choose Base:</label>
+                            <select name="base_n" id="from_base_n" class="dropdown-menu">
+                                <option value="Select">-Select-</option>
+                                <option value="Decmial"> Decimal</option>
+                                <option value="Hex">Hex</option>
+                                <option value="Binary">Binary</option>
+                            </select>
+
+                            <div class="select-container"> 
+                                <select name="base_n" id="to_base_n" class="dropdown-menu">
+                                    <option value="Select">-Select-</option>
+                                    <option value="Decmial"> Decimal</option>
+                                    <option value="Hex">Hex</option>
+                                    <option value="Binary">Binary</option>
+                                </select>
+
+                        </div>
+
+                        <div class="IO-box">
+                            <label for="output" class="filter-input-label">Output: </label>
+                            <output type="text" name="output" class="O-style"> </output>
+                        </div>
+                    </div>
+                </section>
+          </div>
+        </div>
+
+
+        <div class="box1">
+            <div class="button-container">
+                <button type="button" class="buttonstyle" id="reset"> Reset</button>
+                <button type="button" class="buttonstyle" id="convert"> Convert</button>
+            </div>
+        </div>
+
+    </main>
+
+    <button type="button" id="information"> i</button>
 </body>
+
 </html>
